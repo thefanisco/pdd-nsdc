@@ -1,202 +1,101 @@
 <!DOCTYPE html>
 <html lang="hi" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>शिक्षा कायाकल्प न्यास | कौशल विकास एवं रोज़गार केंद्र, वृन्दावन</title>
-    <meta name="description" content="राष्ट्रीय कौशल विकास निगम (NSDC) एवं शिक्षा कायाकल्प न्यास समर्थित प्रशिक्षण कार्यक्रम - अकाउंट्स एंड टैली असिस्टेंट कोर्स, वृन्दावन (मथुरा)।" />
-
-    <!-- Tailwind CSS -->
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>शिक्षा कायाकल्प न्यास - कौशल विकास एवं रोज़गार केंद्र</title>
+    
+    <!-- Tailwind CSS & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts: Hind/Noto Sans Devanagari + Plus Jakarta Sans & Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
-
-    <!-- Font Awesome for crisp icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Noto Sans Devanagari"', 'Inter', 'sans-serif'],
-                        display: ['"Plus Jakarta Sans"', '"Noto Sans Devanagari"', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-orange-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800">
 
-    <!-- Top Government & Center Banner Bar -->
-    <div class="bg-blue-950 text-blue-100 text-xs py-2.5 px-4 border-b border-blue-900">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-1.5 text-center md:text-left">
-            <span class="flex items-center gap-2 font-medium">
-                <i class="fa-solid fa-certificate text-orange-400"></i>
-                राष्ट्रीय कौशल विकास निगम (NSDC) एवं शिक्षा कायाकल्प न्यास समर्थित प्रशिक्षण कार्यक्रम
-            </span>
-            <span class="flex items-center gap-1.5 text-blue-200">
-                <i class="fa-solid fa-location-dot text-orange-400"></i>
-                केंद्र: परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, गौशाला नगर, वृन्दावन (मथुरा)
-            </span>
+    <!-- Top Government Banner Bar -->
+    <div class="bg-blue-900 text-white text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 text-center sm:text-left">
+            <span>राष्ट्रीय कौशल विकास निगम (NSDC) एवं शिक्षा कायाकल्प न्यास समर्थित प्रशिक्षण कार्यक्रम</span>
+            <span>केंद्र: परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, गौशाला नगर, वृन्दावन (मथुरा)</span>
         </div>
     </div>
 
-    <!-- Main Sticky Header -->
-    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-40 border-b border-slate-200/80">
-        <div class="max-w-7xl mx-auto px-4 py-3.5 flex justify-between items-center">
-            <!-- Brand / Logo -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="bg-gradient-to-br from-blue-700 to-blue-900 text-white font-display font-extrabold px-3 py-2.5 rounded-xl text-xs md:text-sm tracking-wider text-center shadow-md group-hover:scale-105 transition-transform">
-                    SKILL<br class="sm:hidden" /> INDIA
-                </div>
+    <!-- Main Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40 border-b border-blue-100">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-600 text-white font-bold p-2.5 rounded-lg text-xs md:text-sm tracking-wider text-center">SKILL INDIA</div>
                 <div>
-                    <h1 class="text-lg md:text-xl font-extrabold text-blue-950 leading-tight">शिक्षा कायाकल्प न्यास</h1>
-                    <p class="text-xs font-medium text-slate-500">कौशल विकास एवं रोज़गार केंद्र</p>
+                    <h1 class="text-base md:text-lg font-bold text-blue-900 leading-tight">शिक्षा कायाकल्प न्यास</h1>
+                    <p class="text-xs text-slate-500">कौशल विकास एवं रोज़गार केंद्र</p>
                 </div>
-            </a>
-
-            <!-- Desktop Navigation -->
-            <nav class="hidden lg:flex space-x-7 text-sm font-semibold text-slate-700 items-center">
-                <a class="hover:text-blue-700 transition py-1" href="#courses">कोर्स सूची</a>
-                <a class="hover:text-blue-700 transition py-1" href="#about">हमारे बारे में</a>
-                <a class="hover:text-blue-700 transition py-1" href="#batches">बैच विवरण</a>
-                <a class="hover:text-blue-700 transition py-1" href="#gallery">सफलता की झलक</a>
-                <a class="hover:text-blue-700 transition py-1" href="#contact">संपर्क करें</a>
-            </nav>
-
-            <!-- CTA & Mobile Menu Toggle -->
-            <div class="flex items-center gap-2.5">
-                <button onclick="openModal('अकाउंट्स एंड टैली असिस्टेंट (Batch 4)')" class="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white text-xs md:text-sm font-bold px-4 py-2.5 rounded-xl shadow-md hover:shadow-lg transition active:scale-95 flex items-center gap-1.5">
-                    <i class="fa-solid fa-user-plus"></i>
-                    <span>सीट बुक करें</span>
-                </button>
-                <button id="mobileMenuBtn" aria-label="मेनू खोलें" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 border border-slate-200 transition">
-                    <i class="fa-solid fa-bars text-lg" id="mobileMenuIcon"></i>
-                </button>
             </div>
-        </div>
-
-        <!-- Mobile Dropdown Navigation -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-5 space-y-1 shadow-lg">
-            <a class="block px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition mobile-nav-link" href="#courses">कोर्स सूची</a>
-            <a class="block px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition mobile-nav-link" href="#about">हमारे बारे में</a>
-            <a class="block px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition mobile-nav-link" href="#batches">बैच विवरण</a>
-            <a class="block px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition mobile-nav-link" href="#gallery">सफलता की झलक</a>
-            <a class="block px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition mobile-nav-link" href="#contact">संपर्क करें</a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-700 items-center">
+                <a class="hover:text-blue-600 transition" href="#courses">कोर्स सूची</a>
+                <a class="hover:text-blue-600 transition" href="#about">हमारे बारे में</a>
+                <a class="hover:text-blue-600 transition" href="#batches">बैच विवरण</a>
+                <a class="hover:text-blue-600 transition" href="#gallery">सफलता की झलक</a>
+                <a class="hover:text-blue-600 transition" href="#contact">संपर्क करें</a>
+            </nav>
+            <div>
+                <a class="bg-orange-500 hover:bg-orange-600 text-white text-xs md:text-sm font-semibold px-4 py-2 rounded shadow transition" href="#courses">सीट बुक करें</a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-950 text-white py-16 md:py-24 px-4 overflow-hidden">
-        <!-- Subtle decorative background glow -->
-        <div class="absolute inset-0 opacity-10 pointer-events-none">
-            <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-orange-400 blur-3xl"></div>
-            <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-blue-400 blur-3xl"></div>
-        </div>
-
-        <div class="relative max-w-5xl mx-auto text-center">
-            <div class="inline-flex items-center gap-2 bg-blue-900/80 text-orange-300 text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full border border-blue-700/80 shadow-sm mb-6">
-                <i class="fa-solid fa-award text-orange-400"></i>
-                <span>NSDC सेक्टर स्किल काउंसिल द्वारा सर्टिफ़िकेशन</span>
-            </div>
-
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-tight mb-5">
-                अकाउंट्स एंड टैली असिस्टेंट कोर्स
-                <span class="block text-orange-400 mt-2 text-2xl sm:text-3xl md:text-4xl">पक्की नौकरी का आश्वासन</span>
-            </h2>
-
-            <p class="text-slate-200 max-w-2xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed mb-9">
-                परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, गौशाला नगर, वृन्दावन में निःशुल्क प्रशिक्षण प्राप्त करें और खुद को सशक्त बनाएं।
-            </p>
-
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <button onclick="openModal('अकाउंट्स एंड टैली असिस्टेंट (Batch 4)')" class="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl hover:shadow-orange-500/25 transition transform hover:-translate-y-0.5 text-sm md:text-base flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                    <span>बैच 4 के लिए सीट बुक करें</span>
-                </button>
-                <a class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold px-8 py-4 rounded-xl shadow transition text-sm md:text-base border border-white/20 flex items-center justify-center gap-2" href="#about">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <span>संस्थान के बारे में जानें</span>
-                </a>
+    <section class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="bg-blue-800 text-orange-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-blue-700">NSDC सेक्टर स्किल काउंसिल द्वारा सर्टिफ़िकेशन</span>
+            <h2 class="text-3xl md:text-5xl font-bold mt-4 mb-4">अकाउंट्स एंड टैली असिस्टेंट कोर्स - पक्की नौकरी का आश्वासन</h2>
+            <p class="text-slate-200 max-w-2xl mx-auto text-sm md:text-base mb-8">परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, गौशाला नगर, वृन्दावन में निःशुल्क प्रशिक्षण प्राप्त करें और खुद को सशक्त बनाएं।</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-lg shadow-lg transition text-sm md:text-base" href="#courses">बैच 4 के लिए सीट बुक करें</a>
+                <a class="bg-blue-800 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition text-sm md:text-base border border-blue-600" href="#about">संस्थान के बारे में जानें</a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="max-w-7xl mx-auto px-4 py-16 md:py-20 border-b border-slate-200" id="about">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-            <div class="lg:col-span-7">
-                <span class="inline-flex items-center gap-1.5 bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1.5 rounded-lg">
-                    <i class="fa-solid fa-building-columns"></i> हमारे बारे में
-                </span>
-                <h3 class="text-2xl sm:text-3xl font-extrabold text-blue-950 mt-3 leading-snug">
-                    परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, वृन्दावन
-                </h3>
+    <section class="max-w-7xl mx-auto px-4 py-16 border-b border-slate-200" id="about">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-1 rounded">हमारे बारे में</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mt-3">परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, वृन्दावन</h3>
                 <p class="text-slate-600 text-sm md:text-base mt-4 leading-relaxed">
                     शिक्षा कायाकल्प न्यास और राष्ट्रीय कौशल विकास निगम (NSDC) के संयुक्त तत्वावधान में हमारे केंद्र पर युवाओं को आत्मनिर्भर और कुशल बनाने के लिए विशेष व्यावसायिक प्रशिक्षण दिए जा रहे हैं।
                 </p>
                 <p class="text-slate-600 text-sm md:text-base mt-3 leading-relaxed">
                     हमारा मुख्य उद्देश्य क्षेत्र के छात्र-छात्राओं को आधुनिक कॉर्पोरेट जगत और अकाउंटिंग सेक्टर की जरूरतों के अनुसार व्यावहारिक ज्ञान प्रदान करना है, जिससे वे आसानी से रोजगार या स्वरोजगार प्राप्त कर सकें।
                 </p>
-
-                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-slate-200 pt-6">
-                    <div class="bg-blue-50/80 p-5 rounded-2xl border border-blue-100 flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl shrink-0 shadow-sm">
-                            <i class="fa-solid fa-clock"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-2xl font-extrabold text-blue-950">330+150</h4>
-                            <p class="text-xs font-medium text-slate-600 mt-0.5">घंटे क्लासरूम और OJT ट्रेनिंग</p>
-                        </div>
+                <div class="mt-6 grid grid-cols-2 gap-4 border-t border-slate-200 pt-6">
+                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                        <h4 class="text-2xl font-bold text-blue-900">330+150</h4>
+                        <p class="text-xs text-slate-600 mt-1">घंटे क्लासरूम और OJT ट्रेनिंग</p>
                     </div>
-                    <div class="bg-orange-50/80 p-5 rounded-2xl border border-orange-100 flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-orange-500 text-white flex items-center justify-center text-xl shrink-0 shadow-sm">
-                            <i class="fa-solid fa-briefcase"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-2xl font-extrabold text-orange-600">100%</h4>
-                            <p class="text-xs font-medium text-slate-600 mt-0.5">प्लेसमेंट सपोर्ट और रोजगार के अवसर</p>
-                        </div>
+                    <div class="bg-orange-50 p-4 rounded-xl border border-orange-100">
+                        <h4 class="text-2xl font-bold text-orange-600">100%</h4>
+                        <p class="text-xs text-slate-600 mt-1">प्लेसमेंट सपोर्ट और रोजगार के अवसर</p>
                     </div>
                 </div>
             </div>
-
-            <div class="lg:col-span-5 bg-white p-7 sm:p-8 rounded-2xl shadow-xl border border-slate-200/90">
-                <div class="flex items-center gap-3 mb-5 border-b border-slate-100 pb-4">
-                    <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center">
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h4 class="text-lg sm:text-xl font-bold text-slate-900">प्रशिक्षण केंद्र की मुख्य विशेषताएं</h4>
-                </div>
-                <ul class="space-y-4 text-sm text-slate-700">
-                    <li class="flex items-start gap-3">
-                        <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <span>अनुभवी प्रशिक्षक <strong>दुष्यंत भारद्वाज</strong> द्वारा मार्गदर्शन।</span>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
+                <h4 class="text-xl font-bold text-slate-900 mb-4 border-b pb-2">प्रशिक्षण केंद्र की मुख्य विशेषताएं</h4>
+                <ul class="space-y-3 text-sm text-slate-700">
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-2">&#10004;</span> अनुभवी प्रशिक्षक दुष्यंत भारद्वाज द्वारा मार्गदर्शन।
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <span>अत्याधुनिक कंप्यूटर लैब और <strong>टैली प्राइम (Tally Prime)</strong> की प्रैक्टिकल क्लास।</span>
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-2">&#10004;</span> अत्याधुनिक कंप्यूटर लैब और टैली प्राइम की प्रैक्टिकल क्लास।
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <span>कोर्स पूरा होने पर <strong>NSDC सेक्टर स्किल काउंसिल</strong> का प्रमाण पत्र।</span>
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-2">&#10004;</span> कोर्स पूरा होने पर NSDC सेक्टर स्किल काउंसिल का प्रमाण पत्र।
                     </li>
-                    <li class="flex items-start gap-3">
-                        <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <span>इंटरव्यू की तैयारी और <strong>जॉब प्लेसमेंट सहायता</strong>।</span>
+                    <li class="flex items-start">
+                        <span class="text-green-600 font-bold mr-2">&#10004;</span> इंटरव्यू की तैयारी और जॉब प्लेसमेंट सहायता।
                     </li>
                 </ul>
             </div>
@@ -204,73 +103,55 @@
     </section>
 
     <!-- Batch Status Section -->
-    <section class="bg-slate-100/80 py-16 md:py-20 px-4 border-b border-slate-200" id="batches">
+    <section class="bg-slate-100 py-16 px-4" id="batches">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
-                <span class="inline-flex items-center gap-1.5 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1.5 rounded-lg">
-                    <i class="fa-solid fa-layer-group"></i> बैच की स्थिति (Batch Status)
-                </span>
-                <h3 class="text-2xl sm:text-3xl font-extrabold text-blue-950 mt-2.5">हमारे प्रशिक्षण सत्र और प्रगति</h3>
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-1 rounded">बैच की स्थिति (Batch Status)</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mt-2">हमारे प्रशिक्षण सत्र और प्रगति</h3>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-7 items-stretch">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
                 <!-- Batch 1 & 2 -->
-                <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-md border border-slate-200 flex flex-col justify-between hover:shadow-lg transition">
+                <div class="bg-white p-6 rounded-xl shadow border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <span class="inline-flex items-center gap-1.5 bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-lg">
-                            <i class="fa-solid fa-circle-check"></i> सफलतापूर्वक पूर्ण
-                        </span>
-                        <h4 class="text-xl font-bold text-slate-900 mt-4">बैच 1 और बैच 2</h4>
-                        <p class="text-slate-600 text-sm mt-2.5 leading-relaxed">
-                            इन दोनों batches को सफलतापूर्वक संचालित किया जा चुका है। बैच 1 के छात्रों को प्रमाण पत्र वितरित किए जा चुके हैं।
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-emerald-700 flex items-center gap-1.5">
-                        <i class="fa-solid fa-graduation-cap"></i> सर्टिफिकेट वितरण संपन्न
+                        <span class="bg-green-100 text-green-800 text-xs font-bold px-2.5 py-1 rounded">सफलतापूर्वक पूर्ण</span>
+                        <h4 class="text-xl font-bold text-slate-900 mt-3">बैच 1 और बैच 2</h4>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">इन दोनों batches को सफलतापूर्वक संचालित किया जा चुका है। बैच 1 के छात्रों को प्रमाण पत्र वितरित किए जा चुके हैं।</p>
                     </div>
                 </div>
 
                 <!-- Batch 3 (Active Batch) -->
-                <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-lg border-2 border-blue-500 flex flex-col justify-between relative">
+                <div class="bg-white p-6 rounded-xl shadow border border-blue-400 ring-2 ring-blue-500/20 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between gap-2">
-                            <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-lg">वर्तमान में संचालित</span>
-                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
-                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span> लाइव
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded">वर्तमान में संचालित</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-600">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> लाइव
                             </span>
                         </div>
-                        <h4 class="text-xl font-bold text-slate-900 mt-4">बैच 3 (Active Batch)</h4>
-                        <p class="text-slate-600 text-sm mt-2.5 leading-relaxed">
-                            वर्तमान में यह बैच केंद्र पर सुचारू रूप से चल रहा है, जहाँ छात्रों को लाइव प्रोजेक्ट्स पर ट्रेनिंग दी जा रही है।
-                        </p>
+                        <h4 class="text-xl font-bold text-slate-900 mt-3">बैच 3 (Active Batch)</h4>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">वर्तमान में यह बैच केंद्र पर सुचारू रूप से चल रहा है, जहाँ छात्रों को लाइव प्रोजेक्ट्स पर ट्रेनिंग दी जा रही है।</p>
                     </div>
-
+                    
                     <div class="mt-6 pt-4 border-t border-slate-100">
-                        <a class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2 shadow-md hover:shadow-lg text-center" href="https://nsdcleaderboard.blogspot.com/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <span>बैच 3 लीडरबोर्ड देखें (Live Standings)</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        <a class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 px-3 rounded-lg text-xs md:text-sm transition flex items-center justify-center gap-2 shadow-md text-center" href="https://nsdcleaderboard.blogspot.com/" target="_blank">
+                            <span>📊</span> बैच 3 लीडरबोर्ड देखें (Live Standings) &#8594;
                         </a>
                     </div>
                 </div>
 
-                <!-- Batch 4 (Admission Open) -->
-                <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-lg border-2 border-orange-400 flex flex-col justify-between">
+                <!-- Batch 4 -->
+                <div class="bg-white p-6 rounded-xl shadow border border-orange-300 ring-2 ring-orange-500/20 flex flex-col justify-between">
                     <div>
-                        <span class="inline-flex items-center gap-1.5 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-lg">
-                            <i class="fa-solid fa-fire"></i> प्रवेश जारी (Admission Open)
-                        </span>
-                        <h4 class="text-xl font-bold text-slate-900 mt-4">बैच 4 (Upcoming Batch)</h4>
-                        <p class="text-slate-600 text-sm mt-2.5 leading-relaxed">
-                            आगामी बैच 4 के लिए रजिस्ट्रेशन शुरू हो चुके हैं। सीमित सीटें शेष हैं, अतः अपनी सीट सुरक्षित करें।
-                        </p>
+                        <span class="bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded">प्रवेश जारी (Admission Open)</span>
+                        <h4 class="text-xl font-bold text-slate-900 mt-3">बैच 4 (Upcoming Batch)</h4>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">आगामी बैच 4 के लिए रजिस्ट्रेशन शुरू हो चुके हैं। सीमित सीटें शेष हैं, अतः अपनी सीट सुरक्षित करें।</p>
                     </div>
-
+                    
                     <div class="mt-6 pt-4 border-t border-slate-100">
-                        <button onclick="openModal('अकाउंट्स एंड टैली असिस्टेंट (Batch 4)')" class="w-full bg-orange-50 hover:bg-orange-100 text-orange-700 border border-orange-200 font-bold py-2.5 px-4 rounded-xl text-sm transition flex items-center justify-center gap-2">
-                            <span>अभी सीट बुक करें</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
+                        <a class="text-orange-600 font-bold text-sm hover:underline block text-center" href="#courses">
+                            अभी सीट बुक करें &#8594;
+                        </a>
                     </div>
                 </div>
             </div>
@@ -278,91 +159,46 @@
     </section>
 
     <!-- Gallery Section -->
-    <section class="max-w-7xl mx-auto px-4 py-16 md:py-20 border-b border-slate-200" id="gallery">
+    <section class="max-w-7xl mx-auto px-4 py-16 border-b border-slate-200" id="gallery">
         <div class="text-center mb-12">
-            <span class="inline-flex items-center gap-1.5 bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1.5 rounded-lg">
-                <i class="fa-solid fa-images"></i> सफलता की झलक
-            </span>
-            <h3 class="text-2xl sm:text-3xl font-extrabold text-blue-950 mt-2.5">बैच 1 &amp; 2 के छात्र प्रमाण पत्र के साथ</h3>
-            <p class="text-slate-600 text-sm md:text-base mt-2">हमारे सफल छात्र जो NSDC का प्रमाण पत्र प्राप्त कर चुके हैं</p>
+            <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-1 rounded">सफलता की झलक</span>
+            <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mt-2">बैच 1 &amp; 2 के छात्र प्रमाण पत्र के साथ</h3>
+            <p class="text-slate-600 text-sm mt-2">हमारे सफल छात्र जो NSDC का प्रमाण पत्र प्राप्त कर चुके हैं</p>
         </div>
-
-        <div class="max-w-3xl mx-auto bg-white p-4 sm:p-5 rounded-2xl shadow-xl border border-slate-200 overflow-hidden text-center">
-            <div class="relative rounded-xl overflow-hidden bg-slate-100">
-                <img
-                    alt="सर्टिफ़िकेट वितरण समारोह - परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, वृन्दावन"
-                    class="w-full rounded-xl object-cover max-h-[28rem] mx-auto"
-                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWiwquZFVv8RNI2W00Vg4rSPYpUY_9oD2U-QP-yxLhODQfqndHLhKTTLq0en1PaebfVpf9JfwvhnDWbZCk0kN1N_3bLbpd9w7fTpE9pdJdMWtFAJ2wT9zFOAbjb48b17EmukzOWOFMqGQPIwx7j0ViJQTRxu__EOFxt_D8hXdCGc3IyJiNT-z0-Ri-9-8m/s1600/WhatsApp%20Image%202026-10-16%20at%207.39.03%20PM.jpeg"
-                    onerror="this.onerror=null;this.src='https://placehold.co/800x500/1e3a8a/ffffff?text=NSDC+Certificate+Distribution+Ceremony+-+Vrindavan';"
-                    title="सर्टिफ़िकेट वितरण समारोह"
-                />
-            </div>
-            <p class="text-center text-xs sm:text-sm font-medium text-slate-600 mt-4 flex items-center justify-center gap-2">
-                <i class="fa-solid fa-camera text-orange-500"></i>
-                <span>परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, वृन्दावन में प्रमाण पत्र वितरण समारोह का दृश्य।</span>
-            </p>
+        <div class="max-w-3xl mx-auto bg-white p-4 rounded-2xl shadow-xl border border-slate-200 overflow-hidden text-center">
+            <img alt="सर्टिफ़िकेट वितरण समारोह" class="w-full rounded-lg object-cover max-h-96" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWiwquZFVv8RNI2W00Vg4rSPYpUY_9oD2U-QP-yxLhODQfqndHLhKTTLq0en1PaebfVpf9JfwvhnDWbZCk0kN1N_3bLbpd9w7fTpE9pdJdMWtFAJ2wT9zFOAbjb48b17EmukzOWOFMqGQPIwx7j0ViJQTRxu__EOFxt_D8hXdCGc3IyJiNT-z0-Ri-9-8m/s1600/WhatsApp%20Image%202026-10-16%20at%207.39.03%20PM.jpeg" title="सर्टिफ़िकेट वितरण समारोह"/>
+            <p class="text-center text-xs text-slate-500 mt-3">परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, वृन्दावन में प्रमाण पत्र वितरण समारोह का दृश्य।</p>
         </div>
     </section>
 
     <!-- Courses Section -->
-    <section class="max-w-7xl mx-auto px-4 py-16 md:py-20" id="courses">
+    <section class="max-w-7xl mx-auto px-4 py-16" id="courses">
         <div class="text-center mb-12">
-            <span class="inline-flex items-center gap-1.5 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1.5 rounded-lg">
-                <i class="fa-solid fa-book-open"></i> पाठ्यक्रम विवरण
-            </span>
-            <h3 class="text-2xl sm:text-3xl font-extrabold text-blue-950 mt-2.5">मुख्य संचालित पाठ्यक्रम</h3>
-            <p class="text-slate-600 text-sm md:text-base mt-2">कौशल विकास के तहत उपलब्ध प्रमुख कोर्स विवरण</p>
+            <h3 class="text-2xl md:text-3xl font-bold text-blue-900">मुख्य संचालित पाठ्यक्रम</h3>
+            <p class="text-slate-600 text-sm mt-2">कौशल विकास के तहत उपलब्ध प्रमुख कोर्स विवरण</p>
         </div>
-
         <div class="max-w-xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-2xl border-2 border-blue-600 overflow-hidden flex flex-col justify-between">
-                <div class="bg-gradient-to-r from-blue-700 to-blue-900 text-white p-6 text-center">
-                    <span class="inline-block bg-orange-500 text-white text-xs font-extrabold px-3.5 py-1 rounded-full uppercase tracking-wide shadow-sm">
-                        निःशुल्क प्रशिक्षण
-                    </span>
-                    <h4 class="text-2xl sm:text-3xl font-extrabold mt-3">अकाउंट्स एंड टैली असिस्टेंट</h4>
+            <div class="bg-white rounded-2xl shadow-xl border-2 border-blue-600 overflow-hidden flex flex-col justify-between">
+                <div class="bg-blue-600 text-white p-4 text-center">
+                    <span class="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">निःशुल्क प्रशिक्षण</span>
+                    <h4 class="text-2xl font-bold mt-2">अकाउंट्स एंड टैली असिस्टेंट</h4>
                 </div>
-
-                <div class="p-6 sm:p-8">
-                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                <div class="p-8">
+                    <p class="text-slate-600 text-sm leading-relaxed">
                         यह कोर्स उन युवाओं के लिए विशेष रूप से डिज़ाइन किया गया है जो अकाउंटिंग, फाइनेंस, जीएसटी फाइलिंग और ऑफिस मैनेजमेंट में करियर बनाना चाहते हैं।
                     </p>
-
-                    <ul class="text-sm text-slate-700 mt-6 space-y-3.5 border-t border-b border-slate-100 py-5">
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
-                            <span><strong>योग्यता:</strong> 12वीं पास</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
-                            <span><strong>अवधि:</strong> 330 घंटे क्लासरूम + 150 घंटे OJT</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
-                            <span><strong>कोर्स का समय:</strong> दोपहर 02:00 से सायं 06:00 बजे तक</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
-                            <span><strong>रजिस्ट्रेशन फीस:</strong> ₹500 (सिक्योरिटी फीस ₹500 - वापसी योग्य)</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
-                            <span><strong>प्रमाणन:</strong> NSDC सेक्टर स्किल काउंसिल</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
-                            <span><strong>स्थान:</strong> परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, वृन्दावन</span>
-                        </li>
+                    <ul class="text-sm text-slate-700 mt-6 space-y-3 border-t border-b border-slate-100 py-4">
+                        <li>&#10004; <strong>योग्यता:</strong> 12वीं पास</li>
+                        <li>&#10004; <strong>अवधि:</strong> 330 घंटे क्लासरूम + 150 घंटे OJT</li>
+                        <li>&#10004; <strong>कोर्स का समय:</strong> दोपहर 02:00 से सायं 06:00 बजे तक</li>
+                        <li>&#10004; <strong>रजिस्ट्रेशन फीस:</strong> &#8377;500 (सिक्योरिटी फीस &#8377;500 - वापसी योग्य)</li>
+                        <li>&#10004; <strong>प्रमाणन:</strong> NSDC सेक्टर स्किल काउंसिल</li>
+                        <li>&#10004; <strong>स्थान:</strong> परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, वृन्दावन</li>
                     </ul>
                 </div>
-
-                <div class="px-6 sm:px-8 pb-8 pt-1">
-                    <button
-                        class="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-extrabold py-4 rounded-xl text-base transition text-center shadow-lg hover:shadow-orange-500/30 active:scale-[0.99] flex items-center justify-center gap-2"
-                        onclick="openModal('अकाउंट्स एंड टैली असिस्टेंट (Batch 4)')"
-                    >
-                        <i class="fa-solid fa-ticket"></i>
-                        <span>Book My Seat (Batch 4)</span>
+                <div class="px-8 pb-8 pt-2">
+                    <button class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-base transition text-center shadow-lg" onclick="openModal('अकाउंट्स एंड टैली असिस्टेंट (Batch 4)')">
+                        Book My Seat (Batch 4)
                     </button>
                 </div>
             </div>
@@ -370,204 +206,142 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="bg-slate-100 py-16 md:py-20 px-4 border-t border-slate-200" id="contact">
-        <div class="max-w-7xl mx-auto text-center mb-12">
-            <span class="inline-flex items-center gap-1.5 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1.5 rounded-lg">
-                <i class="fa-solid fa-headset"></i> मार्गदर्शन एवं संपर्क
-            </span>
-            <h3 class="text-2xl sm:text-3xl font-extrabold text-blue-950 mt-2.5">अधिक जानकारी के लिए संपर्क करें</h3>
+    <section class="bg-slate-100 py-16 px-4" id="contact">
+        <div class="max-w-7xl mx-auto text-center mb-10">
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-1 rounded">मार्गदर्शन एवं संपर्क</span>
+            <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mt-2">अधिक जानकारी के लिए संपर्क करें</h3>
         </div>
-
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Contact 1 -->
-            <div class="bg-white p-7 rounded-2xl shadow-md border border-slate-200 text-center hover:shadow-lg transition">
-                <div class="w-12 h-12 rounded-full bg-blue-50 text-blue-800 flex items-center justify-center mx-auto mb-4 text-lg font-bold">
-                    <i class="fa-solid fa-user-tie"></i>
-                </div>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow border text-center">
                 <h4 class="font-bold text-slate-900 text-lg">दुष्यंत भारद्वाज</h4>
-                <p class="text-xs text-orange-600 font-bold mt-1 uppercase tracking-wide">ट्रेनर</p>
-                <a href="tel:8433139822" class="inline-flex items-center justify-center gap-2 text-sm font-semibold text-slate-700 hover:text-blue-700 mt-4 bg-slate-50 px-4 py-2 rounded-xl border border-slate-200 transition">
-                    <i class="fa-solid fa-phone text-blue-600"></i>
-                    <span>मो.: 8433139822</span>
-                </a>
+                <p class="text-xs text-orange-600 font-semibold mt-1">ट्रेनर</p>
+                <a href="tel:8433139822" class="text-sm text-slate-600 hover:text-blue-600 mt-3 block">मो.: 8433139822</a>
             </div>
-
-            <!-- Contact 2 -->
-            <div class="bg-white p-7 rounded-2xl shadow-md border border-slate-200 text-center hover:shadow-lg transition">
-                <div class="w-12 h-12 rounded-full bg-blue-50 text-blue-800 flex items-center justify-center mx-auto mb-4 text-lg font-bold">
-                    <i class="fa-solid fa-user-gear"></i>
-                </div>
+            <div class="bg-white p-6 rounded-xl shadow border text-center">
                 <h4 class="font-bold text-slate-900 text-lg">देवेन्द्र कुमार गौतम</h4>
-                <p class="text-xs text-orange-600 font-bold mt-1 uppercase tracking-wide">सह - सेंटर कोऑर्डिनेटर</p>
-                <a href="tel:8791877392" class="inline-flex items-center justify-center gap-2 text-sm font-semibold text-slate-700 hover:text-blue-700 mt-4 bg-slate-50 px-4 py-2 rounded-xl border border-slate-200 transition">
-                    <i class="fa-solid fa-phone text-blue-600"></i>
-                    <span>मो.: 8791877392</span>
-                </a>
+                <p class="text-xs text-orange-600 font-semibold mt-1">सह - सेंटर कोऑर्डिनेटर</p>
+                <a href="tel:8791877392" class="text-sm text-slate-600 hover:text-blue-600 mt-3 block">मो.: 8791877392</a>
             </div>
-
-            <!-- Contact 3 -->
-            <div class="bg-white p-7 rounded-2xl shadow-md border border-slate-200 text-center hover:shadow-lg transition">
-                <div class="w-12 h-12 rounded-full bg-blue-50 text-blue-800 flex items-center justify-center mx-auto mb-4 text-lg font-bold">
-                    <i class="fa-solid fa-user-shield"></i>
-                </div>
+            <div class="bg-white p-6 rounded-xl shadow border text-center">
                 <h4 class="font-bold text-slate-900 text-lg">विपिन कुमार शर्मा</h4>
-                <p class="text-xs text-orange-600 font-bold mt-1 uppercase tracking-wide">प्रिंसिपल / सेंटर कोऑर्डिनेटर</p>
-                <a href="tel:9368125694" class="inline-flex items-center justify-center gap-2 text-sm font-semibold text-slate-700 hover:text-blue-700 mt-4 bg-slate-50 px-4 py-2 rounded-xl border border-slate-200 transition">
-                    <i class="fa-solid fa-phone text-blue-600"></i>
-                    <span>मो.: 9368125694</span>
-                </a>
+                <p class="text-xs text-orange-600 font-semibold mt-1">प्रिंसिपल / सेंटर कोऑर्डिनेटर</p>
+                <a href="tel:9368125694" class="text-sm text-slate-600 hover:text-blue-600 mt-3 block">मो.: 9368125694</a>
             </div>
         </div>
     </section>
 
-    <!-- Seat Booking Modal -->
-    <div id="bookingModal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm hidden flex items-center justify-center z-50 p-4" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
-        <div class="bg-white rounded-2xl max-w-md w-full p-6 sm:p-7 relative shadow-2xl border border-slate-200 animate-fadeIn">
-            <button
-                type="button"
-                aria-label="फॉर्म बंद करें"
-                class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center text-lg font-bold transition"
-                onclick="closeModal()"
-            >
-                &times;
-            </button>
+    <!-- Booking Modal -->
+    <div class="fixed inset-0 bg-black/60 backdrop-blur-xs hidden flex items-center justify-center z-50 p-4" id="bookingModal">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 relative shadow-2xl">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-2xl font-bold leading-none" onclick="closeModal()">&#215;</button>
+            
+            <!-- Form View -->
+            <div id="formContainer">
+                <h3 class="text-xl font-bold text-blue-900 mb-1">सीट बुकिंग फॉर्म</h3>
+                <p class="text-xs text-orange-600 font-semibold mb-4" id="selectedCourseTitle"></p>
 
-            <div class="flex items-center gap-2.5 mb-1">
-                <div class="w-9 h-9 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                </div>
-                <h3 id="modalHeading" class="text-xl font-extrabold text-blue-950">सीट बुकिंग फॉर्म</h3>
+                <form id="seatBookingForm" class="space-y-4">
+                    <input id="courseInput" name="Selected_Course" type="hidden"/>
+                    <input name="_subject" type="hidden" value="नई सीट बुकिंग प्राप्त हुई - शिक्षा कायाकल्प न्यास"/>
+                    <input name="_captcha" type="hidden" value="false"/>
+                    <input name="_template" type="hidden" value="table"/>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">पूरा नाम (Full Name)</label>
+                        <input class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-600" name="Name" required type="text"/>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">मोबाइल नंबर / व्हाट्सएप</label>
+                        <input class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-600" name="Phone" required type="tel"/>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">योग्यता (Qualification)</label>
+                        <select class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-600" name="Qualification">
+                            <option value="12th">12वीं पास</option>
+                            <option value="Graduate">स्नातक (Graduate)</option>
+                            <option value="Other">अन्य</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">पता / शहर (Address / City)</label>
+                        <input class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-600" name="Address" required type="text"/>
+                    </div>
+                    <button id="submitBtn" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-lg text-sm transition shadow-md mt-2" type="submit">
+                        सबमिट करें (Book My Seat)
+                    </button>
+                </form>
             </div>
-            <p class="text-xs text-orange-600 font-bold mb-5 pl-11" id="selectedCourseTitle"></p>
 
-            <form action="https://formsubmit.co/daring1caring@gmail.com" class="space-y-4" method="POST">
-                <input id="courseInput" name="Selected_Course" type="hidden" />
-                <input name="_subject" type="hidden" value="नई सीट बुकिंग प्राप्त हुई - शिक्षा कायाकल्प न्यास" />
-                <input name="_captcha" type="hidden" value="false" />
-                <input name="_template" type="hidden" value="table" />
-
-                <div>
-                    <label for="applicantName" class="block text-xs font-bold text-slate-700 mb-1.5">पूरा नाम (Full Name)</label>
-                    <input
-                        id="applicantName"
-                        class="w-full border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition"
-                        name="Name"
-                        placeholder="अपना पूरा नाम लिखें"
-                        required
-                        type="text"
-                    />
+            <!-- Custom Success Message View (No Redirect) -->
+            <div id="successContainer" class="hidden text-center py-6">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                    &#10004;
                 </div>
-
-                <div>
-                    <label for="applicantPhone" class="block text-xs font-bold text-slate-700 mb-1.5">मोबाइल नंबर / व्हाट्सएप</label>
-                    <input
-                        id="applicantPhone"
-                        class="w-full border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition"
-                        name="Phone"
-                        placeholder="10 अंकों का मोबाइल नंबर"
-                        required
-                        type="tel"
-                    />
-                </div>
-
-                <div>
-                    <label for="applicantQual" class="block text-xs font-bold text-slate-700 mb-1.5">योग्यता (Qualification)</label>
-                    <select
-                        id="applicantQual"
-                        class="w-full border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition"
-                        name="Qualification"
-                    >
-                        <option value="12th">12वीं पास</option>
-                        <option value="Graduate">स्नातक (Graduate)</option>
-                        <option value="Other">अन्य</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="applicantAddress" class="block text-xs font-bold text-slate-700 mb-1.5">पता / शहर (Address / City)</label>
-                    <input
-                        id="applicantAddress"
-                        class="w-full border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition"
-                        name="Address"
-                        placeholder="जैसे: वृन्दावन, मथुरा"
-                        required
-                        type="text"
-                    />
-                </div>
-
-                <button
-                    class="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-extrabold py-3 rounded-xl text-sm transition shadow-lg mt-2 flex items-center justify-center gap-2"
-                    type="submit"
-                >
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <span>सबमिट करें (Book My Seat)</span>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Submit Successfully!</h3>
+                <p class="text-sm text-slate-600 font-medium mb-6">
+                    For Allotted Seat Team Reach You.
+                </p>
+                <button onclick="closeModal()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2.5 rounded-lg text-sm transition shadow">
+                    ठीक है (Close)
                 </button>
-            </form>
+            </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 text-slate-400 py-10 px-4 text-xs sm:text-sm text-center border-t border-slate-800">
-        <div class="max-w-7xl mx-auto space-y-2">
-            <p class="font-semibold text-slate-300">
-                &copy; 2026 शिक्षा कायाकल्प न्यास | परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, वृन्दावन।
-            </p>
-            <p class="text-xs text-slate-500">राष्ट्रीय कौशल विकास निगम (NSDC) समर्थित प्रशिक्षण केंद्र</p>
-        </div>
+    <footer class="bg-slate-900 text-slate-400 py-8 text-xs text-center border-t border-slate-800">
+        <p>&#169; 2026 शिक्षा कायाकल्प न्यास | परमेश्वरी देवी धानुका सरस्वती विद्या मंदिर, वृन्दावन।</p>
     </footer>
 
-    <!-- Interactive Scripts -->
     <script>
-        // Modal Logic
-        const bookingModal = document.getElementById('bookingModal');
-        const selectedCourseTitle = document.getElementById('selectedCourseTitle');
-        const courseInput = document.getElementById('courseInput');
-
         function openModal(courseName) {
-            bookingModal.classList.remove('hidden');
-            selectedCourseTitle.innerText = 'चयनित कोर्स: ' + courseName;
-            courseInput.value = courseName;
-            document.body.style.overflow = 'hidden';
+            // Reset modal to form view whenever opened
+            document.getElementById('formContainer').classList.remove('hidden');
+            document.getElementById('successContainer').classList.add('hidden');
+            document.getElementById('seatBookingForm').reset();
+            
+            document.getElementById('bookingModal').classList.remove('hidden');
+            document.getElementById('selectedCourseTitle').innerText = 'चयनित कोर्स: ' + courseName;
+            document.getElementById('courseInput').value = courseName;
         }
 
         function closeModal() {
-            bookingModal.classList.add('hidden');
-            document.body.style.overflow = '';
+            document.getElementById('bookingModal').classList.add('hidden');
         }
 
-        // Close modal when clicking outside dialog card
-        bookingModal.addEventListener('click', function (e) {
-            if (e.target === bookingModal) {
-                closeModal();
-            }
-        });
+        // Handle AJAX form submission to prevent FormSubmit redirect screen
+        document.getElementById('seatBookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = 'Submitting...';
+            submitBtn.disabled = true;
 
-        // Close modal on Escape key
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && !bookingModal.classList.contains('hidden')) {
-                closeModal();
-            }
-        });
+            const formData = new FormData(this);
 
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const mobileMenuIcon = document.getElementById('mobileMenuIcon');
-
-        mobileMenuBtn.addEventListener('click', function () {
-            const isHidden = mobileMenu.classList.toggle('hidden');
-            mobileMenuIcon.classList.toggle('fa-bars', isHidden);
-            mobileMenuIcon.classList.toggle('fa-xmark', !isHidden);
-        });
-
-        // Close mobile menu when a link is clicked
-        document.querySelectorAll('.mobile-nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                mobileMenuIcon.classList.add('fa-bars');
-                mobileMenuIcon.classList.remove('fa-xmark');
+            fetch('https://formsubmit.co/ajax/daring1caring@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide form and show custom success message
+                document.getElementById('formContainer').classList.add('hidden');
+                document.getElementById('successContainer').classList.remove('hidden');
+            })
+            .catch(error => {
+                alert('कुछ त्रुटि हुई, कृपया पुनः प्रयास करें।');
+                console.error(error);
+            })
+            .finally(() => {
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
             });
         });
     </script>
+
 </body>
 </html>
